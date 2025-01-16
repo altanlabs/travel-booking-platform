@@ -49,6 +49,13 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --blue-100: #ebf8ff;
+    --blue-600: #3182ce;
+    --yellow-100: #fefcbf;
+    --yellow-600: #d69e2e;
+    --coral-100: #ffe4e6;
+    --coral-600: #e53e3e;
   }
 
   .dark {
