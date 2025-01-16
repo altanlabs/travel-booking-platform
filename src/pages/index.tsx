@@ -67,8 +67,8 @@ export default function IndexPage() {
         viewport={{ once: true }}
         className="grid gap-8 md:grid-cols-3"
       >
-        <motion.div variants={fadeInUp}>
-          <Card>
+        <motion.div variants={fadeInUp} className="flex flex-col">
+          <Card className="flex-1">
             <CardContent className="pt-6">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-yellow-100">
                 <Calendar className="h-6 w-6 text-yellow-600" />
@@ -81,8 +81,8 @@ export default function IndexPage() {
           </Card>
         </motion.div>
 
-        <motion.div variants={fadeInUp}>
-          <Card>
+        <motion.div variants={fadeInUp} className="flex flex-col">
+          <Card className="flex-1">
             <CardContent className="pt-6">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-coral-100">
                 <DollarSign className="h-6 w-6 text-coral-600" />
@@ -95,8 +95,8 @@ export default function IndexPage() {
           </Card>
         </motion.div>
 
-        <motion.div variants={fadeInUp}>
-          <Card>
+        <motion.div variants={fadeInUp} className="flex flex-col">
+          <Card className="flex-1">
             <CardContent className="pt-6">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
                 <Activity className="h-6 w-6 text-blue-600" />
