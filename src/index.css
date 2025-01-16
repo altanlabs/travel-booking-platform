@@ -94,6 +94,13 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --blue-100: #2a4365;
+    --blue-600: #63b3ed;
+    --yellow-100: #b7791f;
+    --yellow-600: #faf089;
+    --coral-100: #9b2c2c;
+    --coral-600: #feb2b2;
   }
 }
 
