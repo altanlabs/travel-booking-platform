@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { DatePicker } from "@/components/ui/date-picker";
+import { Calendar as DatePicker } from "@/components/ui/calendar";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -70,7 +70,7 @@ export default function IndexPage() {
               <SelectItem value="multi-city">Multi-City</SelectItem>
             </SelectContent>
           </Select>
-          <DatePicker placeholder="Select Date" className="w-full" />
+          <DatePicker className="w-full" />
         </div>
         <Button size="lg" className="w-full mt-4">
           Search Flights
