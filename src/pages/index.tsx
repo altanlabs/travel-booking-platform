@@ -5,6 +5,9 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { DatePicker } from "@/components/ui/date-picker";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -43,6 +46,34 @@ export default function IndexPage() {
         </p>
         <Button size="lg" className="mt-4" onClick={() => navigate('/dashboard')}>
           Start Exploring <MapPin className="ml-2 h-4 w-4" />
+        </Button>
+      </motion.section>
+
+      {/* Flight Search Section */}
+      <motion.section
+        className="bg-white p-8 rounded-lg shadow-lg space-y-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h2 className="text-2xl font-bold text-center">Find Your Flight</h2>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <Input placeholder="From: City or Airport" className="w-full" />
+          <Input placeholder="To: City or Airport" className="w-full" />
+          <Select>
+            <SelectTrigger className="w-full">
+              <SelectValue placeholder="Trip Type" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="round-trip">Round Trip</SelectItem>
+              <SelectItem value="one-way">One Way</SelectItem>
+              <SelectItem value="multi-city">Multi-City</SelectItem>
+            </SelectContent>
+          </Select>
+          <DatePicker placeholder="Select Date" className="w-full" />
+        </div>
+        <Button size="lg" className="w-full mt-4">
+          Search Flights
         </Button>
       </motion.section>
 
